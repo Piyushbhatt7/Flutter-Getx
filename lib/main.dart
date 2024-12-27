@@ -16,12 +16,12 @@ class MyApp extends StatelessWidget {
     
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      // theme: ThemeData.light(),
-      // darkTheme: ThemeData.dark(),
-      // themeMode: ThemeMode.system,
-      theme: ThemeData(
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
+      themeMode: ThemeMode.light,
+      // theme: ThemeData(
         
-      ),
+      // ),
       home: const Dialog_alert(),
     );
   }
