@@ -26,7 +26,10 @@ class _Dialog_alertState extends State<Dialog_alert> {
                 onTap: () {
                    Get.defaultDialog(
                       title: "You Don't deserve pussy",
-                      middleText: "Because you are ugly"
+                      titlePadding: EdgeInsets.only(top: 20),
+                      contentPadding: EdgeInsets.all(20),
+                      middleText: "Because you are ugly",
+
                    );
                 },
             ),
