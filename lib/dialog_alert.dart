@@ -62,6 +62,9 @@ class _Dialog_alertState extends State<Dialog_alert> {
                             ListTile(
                               leading: Icon(Icons.light_mode),
                               title: Text("Light theme"),
+                              onTap: () {
+                                
+                              },
                             ),
 
                               ListTile(
