@@ -59,7 +59,10 @@ class _Dialog_alertState extends State<Dialog_alert> {
                     Container(
                       child: Column(
                         children: [
-
+                            ListTile(
+                              leading: Icon(Icons.light_mode),
+                              title: Text("Light theme"),
+                            )
                         ],
                       ),
                     )
