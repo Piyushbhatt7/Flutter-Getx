@@ -74,7 +74,7 @@ class _Dialog_alertState extends State<Dialog_alert> {
 
                               ListTile(
                                 onTap: () {
-                                Get.changeTheme(ThemeData());
+                                Get.changeTheme(ThemeData.dark());
                               },
                               leading: Icon(Icons.dark_mode),
                               title: Text("Dark theme"),
