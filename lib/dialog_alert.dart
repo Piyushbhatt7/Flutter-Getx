@@ -48,7 +48,41 @@ class _Dialog_alertState extends State<Dialog_alert> {
                    );
                 },
             ),
+          ),
+       
+               Card(
+            child: ListTile(
+              title: Text("GetX Dialog Alert"),
+              subtitle: Text("GetX alert"),
+                onTap: () {
+                   Get.defaultDialog(
+                      title: "You Want Pussy?",
+                      titlePadding: EdgeInsets.only(top: 20),
+                      contentPadding: EdgeInsets.all(20),
+                      middleText: "Ok! Choose any one pussy",
+                      
+                      // textConfirm: "Pink",
+                      // textCancel: "Indian"
+                      // content: Column(
+                      //   children: [
+                      //     Text("NO")
+                      //   ],
+                      // ),
+
+                      confirm: TextButton(onPressed: (){
+                          Get.back();
+                      }, child: Text("Indian")),
+
+                      cancel: TextButton(onPressed: (){
+                        Get.back();
+                      }, child: Text("Pink"))
+                   );
+                },
+            ),
           )
+     
+       
+       
         ],
       ),
     );
