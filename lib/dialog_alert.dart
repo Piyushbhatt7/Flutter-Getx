@@ -25,7 +25,8 @@ class _Dialog_alertState extends State<Dialog_alert> {
               subtitle: Text("GetX alert"),
                 onTap: () {
                    Get.defaultDialog(
-                      title: "Delet chat"
+                      title: "You Don't deserve pussy",
+                      middleText: "Because you are ugly"
                    );
                 },
             ),
