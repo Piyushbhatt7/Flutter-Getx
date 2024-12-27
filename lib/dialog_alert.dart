@@ -62,7 +62,12 @@ class _Dialog_alertState extends State<Dialog_alert> {
                             ListTile(
                               leading: Icon(Icons.light_mode),
                               title: Text("Light theme"),
-                            )
+                            ),
+
+                              ListTile(
+                              leading: Icon(Icons.dark_mode),
+                              title: Text("Dark theme"),
+                            ),
                         ],
                       ),
                     )
