@@ -32,8 +32,12 @@ class _Dialog_alertState extends State<Dialog_alert> {
                       // textConfirm: "Pink",
                       // textCancel: "Indian"
                       confirm: TextButton(onPressed: (){
+                          Get.back();
+                      }, child: Text("Indian")),
 
-                      }, child: Text("Indian"))
+                      cancel: TextButton(onPressed: (){
+                        Get.back();
+                      }, child: Text("Pink"))
                    );
                 },
             ),
