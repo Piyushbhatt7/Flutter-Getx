@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Dialog_alert extends StatefulWidget {
   const Dialog_alert({super.key});
@@ -23,7 +24,9 @@ class _Dialog_alertState extends State<Dialog_alert> {
               title: Text("GetX Dialog Alert"),
               subtitle: Text("GetX alert"),
                 onTap: () {
-                  
+                   Get.defaultDialog(
+                     
+                   )
                 },
             ),
           )
