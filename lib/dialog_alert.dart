@@ -25,11 +25,12 @@ class _Dialog_alertState extends State<Dialog_alert> {
               subtitle: Text("GetX alert"),
                 onTap: () {
                    Get.defaultDialog(
-                      title: "You Don't deserve pussy",
+                      title: "You Want Pussy?",
                       titlePadding: EdgeInsets.only(top: 20),
                       contentPadding: EdgeInsets.all(20),
-                      middleText: "Because you are ugly",
-
+                      middleText: "Ok! Choose any one pussy",
+                      textConfirm: "Pink",
+                      textCancel: "Indian"
                    );
                 },
             ),
