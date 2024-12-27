@@ -31,6 +31,11 @@ class _Dialog_alertState extends State<Dialog_alert> {
                       middleText: "Ok! Choose any one pussy",
                       // textConfirm: "Pink",
                       // textCancel: "Indian"
+                      // content: Column(
+                      //   children: [
+                      //     Text("NO")
+                      //   ],
+                      // ),
                       confirm: TextButton(onPressed: (){
                           Get.back();
                       }, child: Text("Indian")),
