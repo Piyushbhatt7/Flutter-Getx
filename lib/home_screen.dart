@@ -24,7 +24,8 @@ class _HomeScreenState extends State<HomeScreen> {
       floatingActionButton: FloatingActionButton(onPressed: (){
         Get.snackbar("Pussy boy", "You deserve a pussy",
         backgroundColor: Colors.green.shade100,
-        snackPosition: SnackPosition.TOP
+        snackPosition: SnackPosition.TOP,
+        icon: Icon(Icons.align_vertical_center_outlined)
         );
          
       }),
