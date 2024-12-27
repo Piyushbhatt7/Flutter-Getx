@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -20,7 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
         ],
        ),
-
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        Get.snackbar("Pussy boy", "You deserve a pussy");
+      }),
       
     );
   }
