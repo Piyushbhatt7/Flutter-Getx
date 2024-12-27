@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx/dialog_alert.dart';
-import 'package:flutter_getx/home_screen.dart';
 import 'package:get/get.dart';
 
 void main() {
