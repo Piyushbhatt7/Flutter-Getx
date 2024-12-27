@@ -22,7 +22,9 @@ class _Dialog_alertState extends State<Dialog_alert> {
             child: ListTile(
               title: Text("GetX Dialog Alert"),
               subtitle: Text("GetX alert"),
-            
+                onTap: () {
+                  
+                },
             ),
           )
         ],
