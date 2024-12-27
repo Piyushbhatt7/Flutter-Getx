@@ -57,6 +57,9 @@ class _Dialog_alertState extends State<Dialog_alert> {
                 onTap: () {
                    Get.bottomSheet(
                     Container(
+                      decoration: BoxDecoration(
+                        
+                      ),
                       color: Colors.blue.shade100,
                       child: Column(
                         children: [
