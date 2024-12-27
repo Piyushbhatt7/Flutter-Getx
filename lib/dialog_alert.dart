@@ -58,9 +58,10 @@ class _Dialog_alertState extends State<Dialog_alert> {
                    Get.bottomSheet(
                     Container(
                       decoration: BoxDecoration(
-                        
+                        borderRadius: BorderRadius.circular(30),
+                        color: Colors.blue.shade100,
                       ),
-                      color: Colors.blue.shade100,
+                      
                       child: Column(
                         children: [
                             ListTile(
