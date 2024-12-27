@@ -29,8 +29,8 @@ class _Dialog_alertState extends State<Dialog_alert> {
                       titlePadding: EdgeInsets.only(top: 20),
                       contentPadding: EdgeInsets.all(20),
                       middleText: "Ok! Choose any one pussy",
-                      textConfirm: "Pink",
-                      textCancel: "Indian"
+                      // textConfirm: "Pink",
+                      // textCancel: "Indian"
                    );
                 },
             ),
