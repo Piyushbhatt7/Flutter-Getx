@@ -16,15 +16,17 @@ class _Getx_NavigatorState extends State<Getx_Navigator> {
         backgroundColor: Colors.amberAccent.shade200,
        ),
 
-       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          TextButton(onPressed: (){
-
-          }, child: Text("Go to nex screeen")
-          )
-        ],
+       body: Center(
+         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            TextButton(onPressed: (){
+         
+            }, child: Text("Go to nex screeen")
+            )
+          ],
+         ),
        ),
     );
   }
