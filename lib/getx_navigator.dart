@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/dialog_alert.dart';
+import 'package:get/get.dart';
 
 class Getx_Navigator extends StatefulWidget {
   const Getx_Navigator({super.key});
@@ -22,7 +24,7 @@ class _Getx_NavigatorState extends State<Getx_Navigator> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextButton(onPressed: (){
-         
+              Get.to(Dialog_alert());
             }, child: Text("Go to nex screeen")
             )
           ],
