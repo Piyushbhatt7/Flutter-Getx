@@ -16,26 +16,24 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.blue.shade300,
         title: Text('GetX'),
       ),
-       body: Column(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-       
-             Center(
-           child: TextButton(onPressed: (){
-          Get.back();
-            }, child: Text("Go Back")),
-              ),
+          Center(
+            child: TextButton(
+                onPressed: () {
+                  Get.back();
+                },
+                child: Text("Go Back")),
+          ),
         ],
-
-       ),
-      floatingActionButton: FloatingActionButton(onPressed: (){
+      ),
+      floatingActionButton: FloatingActionButton(onPressed: () {
         Get.snackbar("Pussy boy", "You deserve a pussy",
-        backgroundColor: Colors.green.shade100,
-        snackPosition: SnackPosition.TOP,
-        icon: Icon(Icons.align_vertical_center_outlined)
-        );
-         
+            backgroundColor: Colors.green.shade100,
+            snackPosition: SnackPosition.TOP,
+            icon: Icon(Icons.align_vertical_center_outlined));
       }),
-      
     );
   }
 }
