@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx/dialog_alert.dart';
+import 'package:flutter_getx/getx_navigator.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
         
       // ),
-      home: const Dialog_alert(),
+      home: const Getx_Navigator(),
     );
   }
 }
