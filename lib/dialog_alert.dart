@@ -61,6 +61,7 @@ class _Dialog_alertState extends State<Dialog_alert> {
                         borderRadius: BorderRadius.circular(30),
                         color: Colors.blue.shade100,
                       ),
+
                       
                       child: Column(
                         children: [
@@ -79,13 +80,15 @@ class _Dialog_alertState extends State<Dialog_alert> {
                               leading: Icon(Icons.dark_mode),
                               title: Text("Dark theme"),
                               
-                            ),
+                            ),         
                         ],
+                  
                       ),
                     )
                    );      
                    
                    },
+                   
             ),
           )
      
