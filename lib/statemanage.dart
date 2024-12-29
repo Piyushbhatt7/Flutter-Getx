@@ -18,6 +18,10 @@ int x = 20;
         backgroundColor: Colors.blueAccent.shade200,
         title: Text('State Managment'),
       ),
+
+      body: Center(
+        child: Text(x.toString(), style: TextStyle(fontSize: 25),),
+      ),
     );
   }
 }
