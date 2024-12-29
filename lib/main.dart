@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
      // locale: Locale('en', 'US'),
      fallbackLocale: Locale('en', 'US'),
+     translations: Language_change(),
       // theme: ThemeData.light(),
       // darkTheme: ThemeData.dark(),
       // themeMode: ThemeMode.light,
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
         
       // ),
-      home: const Language_change(),
+      home:  HomeScreen(),
 
       getPages: [
         GetPage(name: '/', page: () => HomeScreen()),
