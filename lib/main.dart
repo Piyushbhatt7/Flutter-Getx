@@ -3,7 +3,6 @@ import 'package:flutter_getx/dialog_alert.dart';
 import 'package:flutter_getx/getx_navigator.dart';
 import 'package:flutter_getx/home_screen.dart';
 import 'package:flutter_getx/languagechange.dart';
-import 'package:flutter_getx/mediaquery.dart';
 import 'package:get/get.dart';
 
 void main() {
