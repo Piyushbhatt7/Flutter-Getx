@@ -16,7 +16,11 @@ class _Media_queryState extends State<Media_query> {
         title: Text("Medi query getx"),
       ),
 
-      bo
+      body: Column(
+        children: [
+          
+        ],
+      ),
     );
   }
 }
