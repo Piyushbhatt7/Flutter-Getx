@@ -20,7 +20,7 @@ class _MyStateState extends State<MyState> {
 
   @override   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar( 
         backgroundColor: Colors.blue,
         title: Text('State'),
       ),
