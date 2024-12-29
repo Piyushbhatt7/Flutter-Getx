@@ -23,7 +23,10 @@ int x = 20;
         child: Text(x.toString(), style: TextStyle(fontSize: 50),),
       ),
       floatingActionButton: FloatingActionButton(onPressed: (){
-        
+         x++;
+         setState(() {
+           
+         });
       }),
     );
   }
