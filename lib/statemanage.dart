@@ -52,5 +52,5 @@ import 'package:get/get.dart';
 
 class Statemanage extends GetxController {
    
-   RxBool
+   RxInt counter = 1.obs
 }
