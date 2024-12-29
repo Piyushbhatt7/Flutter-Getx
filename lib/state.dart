@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class MyState extends StatefulWidget {
   const MyState({super.key});
@@ -8,7 +9,7 @@ class MyState extends StatefulWidget {
 }
 
 class _MyStateState extends State<MyState> {
-
+  final CounterController controller = Get.put(dependency)
   int x = 0;
   @override
   Widget build(BuildContext context) {
