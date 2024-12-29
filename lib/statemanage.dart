@@ -8,6 +8,9 @@ class Statemanage extends StatefulWidget {
 }
 
 class _StatemanageState extends State<Statemanage> {
+
+int x = 20;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
