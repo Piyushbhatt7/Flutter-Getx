@@ -19,7 +19,7 @@ class _Media_queryState extends State<Media_query> {
       body: Column(
         children: [
             Container(
-              height: MediaQuery.of(context).size.height,
+              height: MediaQuery.of(context).size.height*1,
               color: Colors.red,
               child: Center(
                 child: Text("Center"),
