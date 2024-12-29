@@ -9,7 +9,7 @@ class MyState extends StatefulWidget {
 }
 
 class _MyStateState extends State<MyState> {
-  final CounterController controller = Get.put(dependency)
+  final MyState controller = Get.put(MyState());
   int x = 0;
   @override
   Widget build(BuildContext context) {
