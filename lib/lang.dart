@@ -23,6 +23,22 @@ class _LangPageState extends State<LangPage> {
               title: Text('message'.tr),
               subtitle: Text('name'.tr),
             ),
+
+            SizedBox(height: 50,),
+
+            Row(
+              children: [
+                OutlinedButton(onPressed: (){
+                   Get.updateLocale(Locale('en', 'US'));
+                }, child: Text('English')),
+
+                SizedBox(width: 10,),
+
+                OutlinedButton(onPressed: (){
+                         Get.updateLocale(Locale('hn', 'IN'));
+                }, child: Text('Hindi'))
+              ],
+            )
           ],
         ),
       )
