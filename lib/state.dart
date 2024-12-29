@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class State extends StatefulWidget {
-  const State({super.key});
+class MyState extends StatefulWidget {
+  const MyState({super.key});
 
   @override
-  State<State> createState() => _StateState();
+  State<MyState> createState() => _MyStateState();
 }
 
-class _StateState extends State<State> {
+class _MyStateState extends State<MyState> {
+
+  int x = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,6 +17,33 @@ class _StateState extends State<State> {
         backgroundColor: Colors.red,
         title: Text('State'),
       ),
+
+       body: Column(
+        children: [
+          Center(
+            child: Text(x.toString(), style: TextStyle(fontSize: 50),),
+          ),
+          Expanded(child: ListView.builder(
+            itemCount: 1000,
+            itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(index.toString()),
+            );
+          }
+          
+          ))
+        ],
+      ),
+    
+    
+
+      floatingActionButton: FloatingActionButton(onPressed: (){
+         x++;
+         setState(() {
+           
+         });
+         
+      }),
     );
   }
 }
