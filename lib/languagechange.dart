@@ -7,6 +7,11 @@ class Language_change extends Translations{
       'message': 'What is you name',
       'name': 'SamAltman'
     },
+
+    'hn_IN' : {
+      'message': 'आपका नाम क्या है?',
+      'name': 'सैमअल्टमैन'
+    },
   };
 
   
