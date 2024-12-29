@@ -12,7 +12,7 @@ class _Language_changeState extends State<Language_change> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent.shade200,
+        backgroundColor: Colors.blueAccent.shade100,
         title: Text("Language change"),
       ),
     );
