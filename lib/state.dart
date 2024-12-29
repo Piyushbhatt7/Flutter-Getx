@@ -27,7 +27,7 @@ class _MyStateState extends State<MyState> {
       ),
 
        body: Center(
-         child: Text(controller.counter.toString(), style: TextStyle(fontSize: 50),),
+         child: Obx(() => Text(controller.counter.toString(), style: TextStyle(fontSize: 50),)),
        ),
     
     
