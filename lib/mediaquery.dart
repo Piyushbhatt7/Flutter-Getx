@@ -10,6 +10,10 @@ class Media_query extends StatefulWidget {
 class _Media_queryState extends State<Media_query> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        
+      ),
+    );
   }
 }
