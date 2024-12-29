@@ -4,8 +4,9 @@ class Language_change extends Translations{
   @override
   Map<String, Map<String, String>> get keys => {
     'en_US' : {
-      'message': 'What is you name'
-    }
+      'message': 'What is you name',
+      'name': 'SamAltman'
+    },
   };
 
   
