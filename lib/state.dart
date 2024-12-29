@@ -10,7 +10,13 @@ class MyState extends StatefulWidget {
 }
 
 class _MyStateState extends State<MyState> {
-  final MyState controller = Get.put(MyState());
+  final Statemanage controller = Get.put(Statemanage());
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +27,7 @@ class _MyStateState extends State<MyState> {
       ),
 
        body: Center(
-         child: Text(controller.toString(), style: TextStyle(fontSize: 50),),
+         child: Text(controller.counter.toString(), style: TextStyle(fontSize: 50),),
        ),
     
     
