@@ -14,8 +14,16 @@ class _LangPageState extends State<LangPage> {
       appBar: AppBar(
         title: Text('Lang Page'),
       ),
-      body: ListTile(
-        title: Text('message'.tr),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ListTile(
+              title: Text('message'.tr),
+              subtitle: Text('name'),
+            ),
+          ],
+        ),
       )
     );
   }
