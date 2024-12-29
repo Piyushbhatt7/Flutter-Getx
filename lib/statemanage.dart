@@ -8,7 +8,7 @@ class Statemanage extends GetxController {
 
    incrementCounter(){
      counter.value++;
-     print(counter.value++);
+     print(counter.value);
    }
 
 }
