@@ -18,8 +18,7 @@ class _MyStateState extends State<MyState> {
     super.initState();
   }
 
-  @override
-  Widget build(BuildContext context) {
+  @override   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
