@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/dialog_alert.dart';
+import 'package:get/get.dart';
 
 class LangPage extends StatefulWidget {
   @override
@@ -12,9 +14,9 @@ class _LangPageState extends State<LangPage> {
       appBar: AppBar(
         title: Text('Lang Page'),
       ),
-      body: Center(
-        child: Text('Hello, World!'),
-      ),
+      body: ListTile(
+        title: Text('message'.tr),
+      )
     );
   }
 }
