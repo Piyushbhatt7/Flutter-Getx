@@ -9,7 +9,7 @@ class Statemanage extends StatefulWidget {
 
 class _StatemanageState extends State<Statemanage> {
 
-int x = 20;
+int x = 0;
 
   @override
   Widget build(BuildContext context) {
