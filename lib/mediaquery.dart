@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Media_query extends StatefulWidget {
   const Media_query({super.key});
@@ -17,7 +18,7 @@ class _Media_queryState extends State<Media_query> {
       ),
 
       body:   Container(
-              height: MediaQuery.of(context).size.height*.8,
+              height: Get.height*.2,
               color: Colors.red,
               child: Center(
                 child: Text("Center"),
