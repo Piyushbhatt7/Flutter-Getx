@@ -10,6 +10,11 @@ class Language_change extends StatefulWidget {
 class _Language_changeState extends State<Language_change> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blueAccent.shade200,
+        title: Text("Language change"),
+      ),
+    );
   }
 }
