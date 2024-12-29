@@ -12,8 +12,11 @@ class _Media_queryState extends State<Media_query> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+        backgroundColor: Colors.orange.shade200,
+        title: Text("Medi query getx"),
       ),
+
+      bo
     );
   }
 }
