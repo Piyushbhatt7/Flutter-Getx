@@ -6,4 +6,8 @@ class Statemanage extends GetxController {
    
    RxInt counter = 1.obs;
 
+   incrementCounter(){
+     counter.value++;
+   }
+
 }
