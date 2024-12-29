@@ -16,13 +16,13 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.blue.shade300,
         title: Text('GetX'),
       ),
-      body: Column(
+      body: Column( 
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
             child: TextButton(
                 onPressed: () {
-                  Get.back();
+                  Get.back();       // Get.toNamed('/screenone', arguments: [ 'name' : 'Piyush' ] )  also use this method
                 },
                 child: Text("Go Back")),
           ),

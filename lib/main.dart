@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/dialog_alert.dart';
 import 'package:flutter_getx/getx_navigator.dart';
+import 'package:flutter_getx/home_screen.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -24,6 +26,12 @@ class MyApp extends StatelessWidget {
         
       // ),
       home: const Getx_Navigator(),
+
+      getPages: [
+        GetPage(name: '/', page: () => HomeScreen()),
+         GetPage(name: '/Getx_Navigator', page: () => Getx_Navigator()),     // Get.toNamed('/screenone', arguments: [ 'name' : 'Piyush' ])
+          GetPage(name: '/Dialog_alert', page: () => Dialog_alert()),
+      ],
     );
   }
 }
