@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_getx/dialog_alert.dart';
 import 'package:flutter_getx/getx_navigator.dart';
 import 'package:flutter_getx/home_screen.dart';
+import 'package:flutter_getx/mediaquery.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
         
       // ),
-      home: const Getx_Navigator(),
+      home: const Media_query(),
 
       getPages: [
         GetPage(name: '/', page: () => HomeScreen()),
