@@ -19,6 +19,8 @@ class _Media_queryState extends State<Media_query> {
       body: Column(
         children: [
             Container(
+              height: 300,
+              color: Colors.red,
               child: Center(
                 child: Text("Center"),
               ),
