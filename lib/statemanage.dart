@@ -20,8 +20,11 @@ int x = 20;
       ),
 
       body: Center(
-        child: Text(x.toString(), style: TextStyle(fontSize: 25),),
+        child: Text(x.toString(), style: TextStyle(fontSize: 50),),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        
+      }),
     );
   }
 }
