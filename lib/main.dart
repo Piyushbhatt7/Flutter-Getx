@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-     // locale: Locale('en', 'US'),
+      locale: Locale('en', 'US'),
      fallbackLocale: Locale('en', 'US'),
      translations: Language_change(),
       // theme: ThemeData.light(),

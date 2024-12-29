@@ -12,6 +12,7 @@ class _LangPageState extends State<LangPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.amberAccent.shade200,
         title: Text('Lang Page'),
       ),
       body: Center(
@@ -20,7 +21,7 @@ class _LangPageState extends State<LangPage> {
           children: [
             ListTile(
               title: Text('message'.tr),
-              subtitle: Text('name'),
+              subtitle: Text('name'.tr),
             ),
           ],
         ),
