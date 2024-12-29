@@ -19,9 +19,17 @@ int x = 0;
         title: Text('State Managment'),
       ),
 
-      body: Center(
-        child: Text(x.toString(), style: TextStyle(fontSize: 50),),
+      body: Column(
+        children: [
+          Center(
+            child: Text(x.toString(), style: TextStyle(fontSize: 50),),
+          ),
+          Expanded(child: ListView.builder(itemBuilder: itemBuilder))
+        ],
       ),
+    
+    
+
       floatingActionButton: FloatingActionButton(onPressed: (){
          x++;
          setState(() {
