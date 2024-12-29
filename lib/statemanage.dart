@@ -24,7 +24,13 @@ int x = 0;
           Center(
             child: Text(x.toString(), style: TextStyle(fontSize: 50),),
           ),
-          Expanded(child: ListView.builder(itemBuilder: itemBuilder))
+          Expanded(child: ListView.builder(itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(index.toString()),
+            );
+          }
+          
+          ))
         ],
       ),
     
