@@ -19,7 +19,9 @@ class _Media_queryState extends State<Media_query> {
       body: Column(
         children: [
             Container(
-              child: ,
+              child: Center(
+                child: Text("Center"),
+              ),
             )
         ],
       ),
