@@ -19,9 +19,11 @@ class MyApp extends StatelessWidget {
     
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
-      themeMode: ThemeMode.light,
+     // locale: Locale('en', 'US'),
+     fallbackLocale: Locale('en', 'US'),
+      // theme: ThemeData.light(),
+      // darkTheme: ThemeData.dark(),
+      // themeMode: ThemeMode.light,
       
       // theme: ThemeData(
         
