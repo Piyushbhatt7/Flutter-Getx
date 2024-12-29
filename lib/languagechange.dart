@@ -1,20 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/internacionalization.dart';
 
-class Language_change extends StatefulWidget {
-  const Language_change({super.key});
-
+class Language_change extends Translations{
   @override
-  State<Language_change> createState() => _Language_changeState();
-}
+  Map<String, Map<String, String>> get keys => throw UnimplementedError();
 
-class _Language_changeState extends State<Language_change> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blueAccent.shade100,
-        title: Text("Language change"),
-      ),
-    );
-  }
+  
 }
