@@ -10,7 +10,7 @@ class MyState extends StatefulWidget {
 
 class _MyStateState extends State<MyState> {
   final MyState controller = Get.put(MyState());
-  int x = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,30 +19,14 @@ class _MyStateState extends State<MyState> {
         title: Text('State'),
       ),
 
-       body: Column(
-        children: [
-          Center(
-            child: Text(x.toString(), style: TextStyle(fontSize: 50),),
-          ),
-          Expanded(child: ListView.builder(
-            itemCount: 1000,
-            itemBuilder: (context, index) {
-            return ListTile(
-              title: Text(index.toString()),
-            );
-          }
-          
-          ))
-        ],
-      ),
+       body: Center(
+         child: Text(controller.toString(), style: TextStyle(fontSize: 50),),
+       ),
     
     
 
       floatingActionButton: FloatingActionButton(onPressed: (){
-         x++;
-         setState(() {
-           
-         });
+         
          
       }),
     );
