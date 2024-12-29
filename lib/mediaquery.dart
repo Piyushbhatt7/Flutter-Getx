@@ -16,17 +16,14 @@ class _Media_queryState extends State<Media_query> {
         title: Text("Medi query getx"),
       ),
 
-      body: Column(
-        children: [
-            Container(
+      body:   Container(
               height: MediaQuery.of(context).size.height*1,
               color: Colors.red,
               child: Center(
                 child: Text("Center"),
               ),
             )
-        ],
-      ),
+      
     );
   }
 }
