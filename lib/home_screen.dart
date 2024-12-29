@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column( 
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
+          Center( 
             child: TextButton(
                 onPressed: () {
                   Get.back();       // Get.toNamed('/screenone', arguments: [ 'name' : 'Piyush' ] )  also use this method
