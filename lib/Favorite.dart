@@ -105,7 +105,7 @@ class _FavoriteState extends State<Favorite> {
             },
             title: Text(controller.fruitList[index].toString()),
             trailing: Icon(Icons.favorite, 
-            color: controller.tempList.contains(controller.fruitList[index].toString()) ? Colors.red : Colors.white,),
+            color: controller.tempList.contains(controller.fruitList[index].toString()) ? Colors.pink : Colors.white,),
            ),
          );
       }),
