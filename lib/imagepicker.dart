@@ -16,6 +16,8 @@ class _imagePickerState extends State<imagePicker> {
         backgroundColor: Colors.blue,
         title: Text('Image Picker'),
       ),
+
+      body: ,
     );
   }
 }
