@@ -12,7 +12,9 @@ class _imagePickerState extends State<imagePicker> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+
+        backgroundColor: Colors.blue,
+        title: Text('Image Picker'),
       ),
     );
   }
