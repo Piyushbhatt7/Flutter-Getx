@@ -30,7 +30,8 @@ class _FavoriteState extends State<Favorite> {
               tempList.add(fruitList[index].toString());
             },
             title: Text(fruitList[index].toString()),
-            trailing: Icon(Icons.favorite, color: Colors.white,),
+            trailing: Icon(Icons.favorite, 
+            color: tempList.contains(fruitList[index].toString()) ? Colors.red : Colors.white,),
            ),
          );
       }),
