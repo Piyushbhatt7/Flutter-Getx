@@ -22,9 +22,11 @@
 //   }
 // }
 
+import 'package:get/get.dart';
+
 class imagePicker extends GetxController {
 
   Future getImage() async {
-    
+       
   }
 }
