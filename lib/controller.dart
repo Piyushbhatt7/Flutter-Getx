@@ -13,6 +13,6 @@ class ExampleController extends GetxController {
 
      removeToFavorite(String value){
          
-         tempList.add(value);
+         tempList.remove(value);
       }
 }
