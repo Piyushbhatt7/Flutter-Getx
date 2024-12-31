@@ -90,15 +90,15 @@ class _FavoriteState extends State<Favorite> {
 
               if(controller.tempList.contains(controller.fruitList[index].toString())){
                  
-                 controller.tempList.remove(controller.fruitList[index].toString()); 
+                 controller.removeToFavorite(controller.fruitList[index].toString()); 
               }
 
               else {
 
-                  controller.tempList.add(controller.fruitList[index].toString());
+                  controller.addToFavorite(controller.fruitList[index].toString());
               }
 
-              //tempList.add(fruitList[index].toString());
+             
               setState(() {
                 
               });
