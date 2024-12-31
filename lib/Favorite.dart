@@ -8,6 +8,8 @@ class Favorite extends StatefulWidget {
 }
 
 class _FavoriteState extends State<Favorite> {
+
+  List<String> fruitList = ['Orange', 'Banana', 'Papya', 'Mango', 'Watermelon', 'Strawbery'];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
