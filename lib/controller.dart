@@ -6,7 +6,7 @@ class ExampleController extends GetxController {
 
       RxList<dynamic> tempList = [].obs;
 
-      addToFavorite(){
-        
+      addToFavorite(String value){
+         
       }
 }
