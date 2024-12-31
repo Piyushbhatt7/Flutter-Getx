@@ -1,54 +1,55 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 
-class Favorite extends StatefulWidget {
-  const Favorite({super.key});
+// class Favorite extends StatefulWidget {
+//   const Favorite({super.key});
 
-  @override
-  State<Favorite> createState() => _FavoriteState();
-}
+//   @override
+//   State<Favorite> createState() => _FavoriteState();
+// }
 
-class _FavoriteState extends State<Favorite> {
+// class _FavoriteState extends State<Favorite> {
 
-  List<String> fruitList = ['Orange', 'Banana', 'Papya', 'Mango', 'Watermelon', 'Strawbery'];
+//   List<String> fruitList = ['Orange', 'Banana', 'Papya', 'Mango', 'Watermelon', 'Strawbery'];
 
-  List<String> tempList = [];
+//   List<String> tempList = [];
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
-        title: Text("Favorite"),
-      ),
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         backgroundColor: Colors.blueGrey,
+//         title: Text("Favorite"),
+//       ),
 
-      body: ListView.builder(
-        itemCount: fruitList.length,
-        itemBuilder: (context, index){
-         return Card(
-           child: ListTile(
-            onTap: () {
+//       body: ListView.builder(
+//         itemCount: fruitList.length,
+//         itemBuilder: (context, index){
+//          return Card(
+//            child: ListTile(
+//             onTap: () {
 
-              if(tempList.contains(fruitList[index].toString())){
+//               if(tempList.contains(fruitList[index].toString())){
                  
-                 tempList.remove(fruitList[index].toString());
-              }
+//                  tempList.remove(fruitList[index].toString());
+//               }
 
-              else {
+//               else {
 
-                  tempList.add(fruitList[index].toString());
-              }
+//                   tempList.add(fruitList[index].toString());
+//               }
 
-              //tempList.add(fruitList[index].toString());
-              setState(() {
+//               //tempList.add(fruitList[index].toString());
+//               setState(() {
                 
-              });
-            },
-            title: Text(fruitList[index].toString()),
-            trailing: Icon(Icons.favorite, 
-            color: tempList.contains(fruitList[index].toString()) ? Colors.red : Colors.white,),
-           ),
-         );
-      }),
-    );
-  }
-}
+//               });
+//             },
+//             title: Text(fruitList[index].toString()),
+//             trailing: Icon(Icons.favorite, 
+//             color: tempList.contains(fruitList[index].toString()) ? Colors.red : Colors.white,),
+//            ),
+//          );
+//       }),
+    
+//     );
+//   }
+// }
