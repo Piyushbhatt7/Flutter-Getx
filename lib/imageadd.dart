@@ -31,9 +31,10 @@ class _imageAddState extends State<imageAdd> {
               FileImage(File(controller.imagePath.value)) : null,
             ),
 
-            TextButton(onPressed: ({
+            TextButton(onPressed: ()
+              {
               controller.getImage();
-            }), child: Text("Pick Image"))
+            }, child: Text("Pick Image"))
           ],
          );
       })
