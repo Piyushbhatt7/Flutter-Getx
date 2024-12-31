@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/Favorite.dart';
 import 'package:flutter_getx/dialog_alert.dart';
 import 'package:flutter_getx/getx_navigator.dart';
 import 'package:flutter_getx/home_screen.dart';
 import 'package:flutter_getx/imageadd.dart';
-import 'package:flutter_getx/imagepicker.dart';
 import 'package:flutter_getx/languagechange.dart';
 import 'package:get/get.dart';
 
