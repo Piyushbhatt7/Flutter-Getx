@@ -35,8 +35,10 @@ class _FavoriteState extends State<Favorite> {
 
               else {
 
+                  tempList.add(fruitList[index].toString());
               }
-              tempList.add(fruitList[index].toString());
+
+              //tempList.add(fruitList[index].toString());
               setState(() {
                 
               });
