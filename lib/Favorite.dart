@@ -19,10 +19,12 @@ class _FavoriteState extends State<Favorite> {
       ),
 
       body: ListView.builder(
-        itemCount: 10,
+        itemCount: fruitList.length,
         itemBuilder: (context, index){
-         return ListTile(
-          title: Text(index.toString()),
+         return Card(
+           child: ListTile(
+            title: Text(fruitList[index].toString()),
+           ),
          );
       }),
     );
