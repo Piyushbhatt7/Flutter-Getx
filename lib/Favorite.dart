@@ -88,9 +88,9 @@ class _FavoriteState extends State<Favorite> {
            child: ListTile(
             onTap: () {
 
-              if(tempList.contains(fruitList[index].toString())){
+              if(controller.tempList.contains(controller.fruitList[index].toString())){
                  
-                 tempList.remove(fruitList[index].toString());
+                 controller.tempList.remove(controller.fruitList[index].toString()); 
               }
 
               else {
