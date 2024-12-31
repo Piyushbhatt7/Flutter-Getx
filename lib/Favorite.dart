@@ -10,6 +10,9 @@ class Favorite extends StatefulWidget {
 class _FavoriteState extends State<Favorite> {
 
   List<String> fruitList = ['Orange', 'Banana', 'Papya', 'Mango', 'Watermelon', 'Strawbery'];
+
+  List<String> tempList = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +26,11 @@ class _FavoriteState extends State<Favorite> {
         itemBuilder: (context, index){
          return Card(
            child: ListTile(
+            onTap: () {
+              tempList.add(fruitList[index].toString());
+            },
             title: Text(fruitList[index].toString()),
+            trailing: Icon(Icons.favorite, color: Colors.white,),
            ),
          );
       }),
