@@ -25,10 +25,13 @@ class _imageAddState extends State<imageAdd> {
 
       body: Obx(() {
          return Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              backgroundImage: controller.imagePath.isNotEmpty ?
-              FileImage(File(controller.imagePath.value)) : null,
+            Center(
+              child: CircleAvatar(
+                backgroundImage: controller.imagePath.isNotEmpty ?
+                FileImage(File(controller.imagePath.value)) : null,
+              ),
             ),
 
             TextButton(onPressed: ()
