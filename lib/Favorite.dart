@@ -75,6 +75,7 @@ class _FavoriteState extends State<Favorite> {
 
   @override
   Widget build(BuildContext context) {
+    print('Build');
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.brown.shade500,
@@ -98,17 +99,15 @@ class _FavoriteState extends State<Favorite> {
                   controller.addToFavorite(controller.fruitList[index].toString());
               }
 
-             
-              setState(() {
-                
-              });
             },
             title: Text(controller.fruitList[index].toString()),
-            trailing: Icon(Icons.favorite, 
+            trailing: Obx(() => Icon(Icons.favorite, 
             color: controller.tempList.contains(controller.fruitList[index].toString()) ? Colors.pink : Colors.white,),
+            )
            ),
          );
       }),
+
     );
   }
 }
