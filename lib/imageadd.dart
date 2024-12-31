@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx/imagepicker.dart';
 import 'package:get/get.dart';
-import 'package:image_picker/image_picker.dart';
 
 class imageAdd extends StatefulWidget {
   const imageAdd({super.key});
@@ -22,7 +21,11 @@ class _imageAddState extends State<imageAdd> {
         title: Text('Image Picker'),
       ),
 
-      body: ,
+      body: Column(
+        children: [
+          Obx(()=> )
+        ],
+      ),
     );
   }
 }
