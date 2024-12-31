@@ -15,6 +15,12 @@ class _FavoriteState extends State<Favorite> {
         backgroundColor: Colors.blueGrey,
         title: Text("Favorite"),
       ),
+
+      body: ListView.builder(itemBuilder: (context, index){
+         return ListTile(
+          title: Text(index.toString()),
+         );
+      }),
     );
   }
 }
