@@ -16,7 +16,9 @@ class _FavoriteState extends State<Favorite> {
         title: Text("Favorite"),
       ),
 
-      body: ListView.builder(itemBuilder: (context, index){
+      body: ListView.builder(
+        itemCount: 10,
+        itemBuilder: (context, index){
          return ListTile(
           title: Text(index.toString()),
          );
