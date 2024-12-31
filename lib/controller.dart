@@ -8,5 +8,11 @@ class ExampleController extends GetxController {
 
       addToFavorite(String value){
          
+         tempList.add(value);
+      }
+
+     removeToFavorite(String value){
+         
+         tempList.add(value);
       }
 }
