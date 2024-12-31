@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_getx/imagepicker.dart';
 import 'package:get/get.dart';
@@ -25,10 +27,11 @@ class _imageAddState extends State<imageAdd> {
          return Column(
           children: [
             CircleAvatar(
-              backgroundImage: controller,
+              backgroundImage: controller.imagePath.isNotEmpty ?
+              FileImage(File(controller.imagePath.value)) : null,
             )
           ],
-         )
+         );
       })
     );
   }
