@@ -28,6 +28,9 @@ class _FavoriteState extends State<Favorite> {
            child: ListTile(
             onTap: () {
               tempList.add(fruitList[index].toString());
+              setState(() {
+                
+              });
             },
             title: Text(fruitList[index].toString()),
             trailing: Icon(Icons.favorite, 
