@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/imagepicker.dart';
+import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
 
 class imageAdd extends StatefulWidget {
   const imageAdd({super.key});
@@ -8,6 +11,8 @@ class imageAdd extends StatefulWidget {
 }
 
 class _imageAddState extends State<imageAdd> {
+
+  imagePicker controller = Get.put(imagePicker());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
