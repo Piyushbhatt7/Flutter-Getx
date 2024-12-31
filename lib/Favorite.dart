@@ -95,7 +95,7 @@ class _FavoriteState extends State<Favorite> {
 
               else {
 
-                  tempList.add(fruitList[index].toString());
+                  controller.tempList.add(controller.fruitList[index].toString());
               }
 
               //tempList.add(fruitList[index].toString());
