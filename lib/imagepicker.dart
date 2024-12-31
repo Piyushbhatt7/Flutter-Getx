@@ -10,6 +10,10 @@ class imagePicker extends StatefulWidget {
 class _imagePickerState extends State<imagePicker> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        
+      ),
+    );
   }
 }
