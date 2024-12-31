@@ -29,7 +29,11 @@ class _imageAddState extends State<imageAdd> {
             CircleAvatar(
               backgroundImage: controller.imagePath.isNotEmpty ?
               FileImage(File(controller.imagePath.value)) : null,
-            )
+            ),
+
+            TextButton(onPressed: ({
+              controller.getImage();
+            }), child: Text("Pick Image"))
           ],
          );
       })
