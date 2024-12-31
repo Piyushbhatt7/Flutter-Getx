@@ -57,6 +57,9 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/controller.dart';
+
+import 'package:get/get.dart';
 
 class Favorite extends StatefulWidget {
   const Favorite({super.key});
@@ -66,6 +69,10 @@ class Favorite extends StatefulWidget {
 }
 
 class _FavoriteState extends State<Favorite> {
+
+ ExampleController controller = Get.put(ExampleController());
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +81,34 @@ class _FavoriteState extends State<Favorite> {
         title: Text('Favorite'),
       ),
 
-      body: ,
+       body: ListView.builder(
+        itemCount: controller.fruitList.length,
+        itemBuilder: (context, index){
+         return Card(
+           child: ListTile(
+            onTap: () {
+
+              if(tempList.contains(fruitList[index].toString())){
+                 
+                 tempList.remove(fruitList[index].toString());
+              }
+
+              else {
+
+                  tempList.add(fruitList[index].toString());
+              }
+
+              //tempList.add(fruitList[index].toString());
+              setState(() {
+                
+              });
+            },
+            title: Text(fruitList[index].toString()),
+            trailing: Icon(Icons.favorite, 
+            color: tempList.contains(fruitList[index].toString()) ? Colors.red : Colors.white,),
+           ),
+         );
+      }),
     );
   }
 }
