@@ -103,9 +103,9 @@ class _FavoriteState extends State<Favorite> {
                 
               });
             },
-            title: Text(fruitList[index].toString()),
+            title: Text(controller.fruitList[index].toString()),
             trailing: Icon(Icons.favorite, 
-            color: tempList.contains(fruitList[index].toString()) ? Colors.red : Colors.white,),
+            color: controller.tempList.contains(controller.fruitList[index].toString()) ? Colors.red : Colors.white,),
            ),
          );
       }),
