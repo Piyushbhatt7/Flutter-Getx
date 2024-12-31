@@ -21,11 +21,15 @@ class _imageAddState extends State<imageAdd> {
         title: Text('Image Picker'),
       ),
 
-      body: Column(
-        children: [
-          Obx(()=> )
-        ],
-      ),
+      body: Obx(() {
+         return Column(
+          children: [
+            CircleAvatar(
+              backgroundImage: controller,
+            )
+          ],
+         )
+      })
     );
   }
 }
