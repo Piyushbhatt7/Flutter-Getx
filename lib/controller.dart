@@ -4,5 +4,5 @@ class ExampleController extends GetxController {
 
       RxList<String> fruitList = ['Orange', 'Banana', 'Papya', 'Mango', 'Watermelon', 'Strawbery'].obs;
 
-      List<String> tempList = [];
+      RxList<dynamic> tempList = [].obs;
 }
