@@ -12,6 +12,7 @@ class imageAdd extends StatefulWidget {
 }
 
 class _imageAddState extends State<imageAdd> {
+  
 
   imagePicker controller = Get.put(imagePicker());
   @override

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/login_controller.dart';
+import 'package:get/get.dart';
 
 class login_screen extends StatefulWidget {
   const login_screen({super.key});
@@ -8,6 +10,9 @@ class login_screen extends StatefulWidget {
 }
 
 class _login_screenState extends State<login_screen> {
+
+  LoginController controller = Get.put(LoginController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +24,7 @@ class _login_screenState extends State<login_screen> {
         children: [
           TextFormField(
             controller: TextEditingController(),
-            
+
           )
         ],
       ),
