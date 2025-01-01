@@ -10,6 +10,11 @@ class login_screen extends StatefulWidget {
 class _login_screenState extends State<login_screen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.greenAccent,
+        title: Text('Login Screen'),
+      ),
+    );
   }
 }
