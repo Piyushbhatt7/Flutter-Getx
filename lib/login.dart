@@ -48,7 +48,7 @@ class _login_screenState extends State<login_screen> {
               onTap: () {
                 controller.loginApi();
               },
-              child: controller.loadind.value ? CircularProgressIndicator()  :           Container(
+              child: controller.loadind.value ? CircularProgressIndicator() : Container(
                 height: 45,
                 color: Colors.blue,
                 child: Center(
