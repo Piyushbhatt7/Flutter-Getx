@@ -9,6 +9,8 @@ class LoginController  extends GetxController {
     final emailCotroller = TextEditingController().obs;
     final passwordController = TextEditingController().obs;
 
+    RxBool loadind = false.obs;
+
     void loginApi() async {
 
       try{
