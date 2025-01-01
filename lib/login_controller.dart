@@ -37,6 +37,8 @@ class LoginController  extends GetxController {
        }
 
        else {
+              
+              loadind.value = false;
               Get.snackbar('Login Failed', data['error']);
        }
 
