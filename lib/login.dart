@@ -23,9 +23,11 @@ class _login_screenState extends State<login_screen> {
       body: Column(
         children: [
           TextFormField(
-            controller: TextEditingController(),
-
-          )
+            controller: controller.emailCotroller.value,
+            decoration: InputDecoration(
+              hintText: 'Email'
+            ),
+          ),
         ],
       ),
     );
