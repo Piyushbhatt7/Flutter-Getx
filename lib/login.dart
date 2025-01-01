@@ -28,6 +28,13 @@ class _login_screenState extends State<login_screen> {
               hintText: 'Email'
             ),
           ),
+
+          TextFormField(
+            controller: controller.passwordController.value,
+            decoration: InputDecoration(
+              hintText: 'Password'
+            ),
+          ),
         ],
       ),
     );
