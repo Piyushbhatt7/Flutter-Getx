@@ -20,22 +20,27 @@ class _login_screenState extends State<login_screen> {
         backgroundColor: Colors.greenAccent,
         title: Text('Login Screen'),
       ),
-      body: Column(
-        children: [
-          TextFormField(
-            controller: controller.emailCotroller.value,
-            decoration: InputDecoration(
-              hintText: 'Email'
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextFormField(
+              controller: controller.emailCotroller.value,
+              decoration: InputDecoration(
+                hintText: 'Email'
+              ),
             ),
-          ),
-
-          TextFormField(
-            controller: controller.passwordController.value,
-            decoration: InputDecoration(
-              hintText: 'Password'
+        
+            TextFormField(
+              controller: controller.passwordController.value,
+              decoration: InputDecoration(
+                hintText: 'Password'
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
