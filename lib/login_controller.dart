@@ -29,13 +29,14 @@ class LoginController  extends GetxController {
        }
 
        else {
-               
+              Get.snackbar('Login Failed', data['error']);
        }
 
       } 
 
       catch(e) {
-         
+          
+          Get.snackbar('Exeption', e.toString());
       }
        
       
