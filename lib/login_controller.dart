@@ -7,7 +7,7 @@ class LoginController  extends GetxController {
     final emailCotroller = TextEditingController().obs;
     final passwordController = TextEditingController().obs;
 
-    void loginApi(){
+    void loginApi() async {
        
        final response = await put(Uri.parse('https://reqres.in/api/login'),
        body: {
