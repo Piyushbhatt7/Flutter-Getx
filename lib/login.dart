@@ -44,6 +44,9 @@ class _login_screenState extends State<login_screen> {
             SizedBox(height: 50,),
 
             InkWell(
+              onTap: () {
+                controller.loginApi();
+              },
               child: Container(
                 height: 45,
                 color: Colors.blue,

@@ -5,4 +5,8 @@ class LoginController  extends GetxController {
     
     final emailCotroller = TextEditingController().obs;
     final passwordController = TextEditingController().obs;
+
+    void loginApi(){
+      
+    }
 }
