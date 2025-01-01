@@ -14,7 +14,7 @@ class LoginController  extends GetxController {
       try{
              final response = await put(Uri.parse('https://reqres.in/api/login'),
        body: {
-              'email': '',
+              'email': emailCotroller.value.text,
               'password': '',
        }
        
@@ -29,9 +29,9 @@ class LoginController  extends GetxController {
        }
 
        else {
-
+               
        }
-       
+
       } 
 
       catch(e) {
