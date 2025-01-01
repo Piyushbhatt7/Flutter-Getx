@@ -43,7 +43,7 @@ class _login_screenState extends State<login_screen> {
 
             SizedBox(height: 50,),
 
-            InkWell(
+           Obx(() {  return InkWell(
               onTap: () {
                 controller.loginApi();
               },
@@ -54,7 +54,9 @@ class _login_screenState extends State<login_screen> {
                   child: Text('Login'),
                 ),
               ),
-            )
+            );
+           }
+          )
           ],
         ),
       ),
