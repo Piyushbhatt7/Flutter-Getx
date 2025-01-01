@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_getx/dialog_alert.dart';
 import 'package:flutter_getx/getx_navigator.dart';
 import 'package:flutter_getx/home_screen.dart';
-import 'package:flutter_getx/imageadd.dart';
 import 'package:flutter_getx/languagechange.dart';
+import 'package:flutter_getx/login.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
         
       // ),
-      home:  imageAdd(),
+      home:  login_screen(),
 
       getPages: [
         GetPage(name: '/', page: () => HomeScreen()),
