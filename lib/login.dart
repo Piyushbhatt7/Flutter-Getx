@@ -40,6 +40,8 @@ class _login_screenState extends State<login_screen> {
                 hintText: 'Password'
               ),
             ),
+
+            SizedBox(height: 50,),
           ],
         ),
       ),
