@@ -46,6 +46,7 @@ class _login_screenState extends State<login_screen> {
             InkWell(
               child: Container(
                 height: 45,
+                color: Colors.blue,
                 child: Center(
                   child: Text('Login'),
                 ),
