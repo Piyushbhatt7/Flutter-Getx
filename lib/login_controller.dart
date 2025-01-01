@@ -10,8 +10,9 @@ class LoginController  extends GetxController {
     final passwordController = TextEditingController().obs;
 
     void loginApi() async {
-       
-       final response = await put(Uri.parse('https://reqres.in/api/login'),
+
+      try{
+             final response = await put(Uri.parse('https://reqres.in/api/login'),
        body: {
               'email': '',
               'password': '',
@@ -25,5 +26,11 @@ class LoginController  extends GetxController {
        if(response.statusCode == 200) {
          
        }
+      } 
+      catch(e) {
+         
+      }
+       
+      
     }
 }
