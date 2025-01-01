@@ -23,10 +23,17 @@ class LoginController  extends GetxController {
        var data = jsonDecode(response.body);
        print(data);
        print(response.statusCode);
+       
        if(response.statusCode == 200) {
          
        }
+
+       else {
+
+       }
+       
       } 
+
       catch(e) {
          
       }
