@@ -24,6 +24,7 @@ class _login_screenState extends State<login_screen> {
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextFormField(
