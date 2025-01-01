@@ -43,11 +43,12 @@ class _login_screenState extends State<login_screen> {
 
             SizedBox(height: 50,),
 
-           Obx(() {  return InkWell(
+           Obx(() {  
+            return InkWell(
               onTap: () {
                 controller.loginApi();
               },
-              child: Container(
+              child: controller.loadind.value ? CircularProgressIndicator()  :           Container(
                 height: 45,
                 color: Colors.blue,
                 child: Center(
