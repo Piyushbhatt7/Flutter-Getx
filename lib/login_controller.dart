@@ -12,8 +12,11 @@ class LoginController  extends GetxController {
     RxBool loadind = false.obs;
 
     void loginApi() async {
+      loadind.value = true;
+
 
       try{
+
              final response = await post(Uri.parse('https://reqres.in/api/login'),
        body: {
               'email': emailCotroller.value.text,
@@ -29,6 +32,7 @@ class LoginController  extends GetxController {
        
        if(response.statusCode == 200) {
           
+          loadind.value = false;
           Get.snackbar('Login successful', 'Congratulations');
        }
 
