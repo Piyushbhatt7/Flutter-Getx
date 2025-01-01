@@ -15,18 +15,19 @@ class LoginController  extends GetxController {
              final response = await put(Uri.parse('https://reqres.in/api/login'),
        body: {
               'email': emailCotroller.value.text,
-              'password': passwordController.value.text+'sdf',
+              'password': passwordController.value.text,
        }
        
        );
 
        var data = jsonDecode(response.body);
-       print(data);
        print(response.statusCode);
+       print(data);
+       
        
        if(response.statusCode == 200) {
           
-          Get.snackbar('Login successful', 'Congratulation🎉');
+          Get.snackbar('Login successful', 'Congratulations');
        }
 
        else {
