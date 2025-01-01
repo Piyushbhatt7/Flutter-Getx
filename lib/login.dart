@@ -42,6 +42,15 @@ class _login_screenState extends State<login_screen> {
             ),
 
             SizedBox(height: 50,),
+
+            InkWell(
+              child: Container(
+                height: 45,
+                child: Center(
+                  child: Text('Login'),
+                ),
+              ),
+            )
           ],
         ),
       ),
