@@ -15,6 +15,14 @@ class _login_screenState extends State<login_screen> {
         backgroundColor: Colors.greenAccent,
         title: Text('Login Screen'),
       ),
+      body: Column(
+        children: [
+          TextFormField(
+            controller: TextEditingController(),
+            
+          )
+        ],
+      ),
     );
   }
 }
