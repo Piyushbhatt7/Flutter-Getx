@@ -13,7 +13,7 @@ class _LangPageState extends State<LangPage> {
       appBar: AppBar(
         backgroundColor: Colors.amberAccent.shade200,
         title: Text('Lang Page'),
-      ),
+      ), 
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
