@@ -6,7 +6,7 @@ class LangPage extends StatefulWidget {
   _LangPageState createState() => _LangPageState();
 }
 
-class _LangPageState extends State<LangPage> {
+class _LangPageState extends State<LangPage> { 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
