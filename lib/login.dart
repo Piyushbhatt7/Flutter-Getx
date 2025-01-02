@@ -20,7 +20,7 @@ class _login_screenState extends State<login_screen> {
         backgroundColor: Colors.greenAccent,
         title: Text('Login Screen'),
       ),
-      
+
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         
@@ -31,7 +31,7 @@ class _login_screenState extends State<login_screen> {
             TextFormField(
               controller: controller.emailCotroller.value,
               decoration: InputDecoration(
-                hintText: 'Email'
+                hintText: 'Email' 
               ),
             ),
         
