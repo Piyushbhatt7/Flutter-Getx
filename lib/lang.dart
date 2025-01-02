@@ -25,7 +25,7 @@ class _LangPageState extends State<LangPage> {
 
             SizedBox(height: 50,),
 
-            Row(
+            Row( 
               children: [
                 OutlinedButton(onPressed: (){
                    Get.updateLocale(Locale('en', 'US'));
