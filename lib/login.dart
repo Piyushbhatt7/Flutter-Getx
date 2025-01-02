@@ -53,7 +53,7 @@ class _login_screenState extends State<login_screen> {
                 color: Colors.blue,
                 child: Center(
                   child: Text('Login'),
-                ),
+                ), 
               ),
             );
            }
