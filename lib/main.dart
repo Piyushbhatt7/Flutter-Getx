@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
       home:  login_screen(),
 
       getPages: [
+      
         GetPage(name: '/', page: () => HomeScreen()),
          GetPage(name: '/Getx_Navigator', page: () => Getx_Navigator()),     // Get.toNamed('/screenone', arguments: [ 'name' : 'Piyush' ])
           GetPage(name: '/Dialog_alert', page: () => Dialog_alert()),
