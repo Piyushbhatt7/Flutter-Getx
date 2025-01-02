@@ -37,7 +37,7 @@ class _LangPageState extends State<LangPage> {
                          Get.updateLocale(Locale('hn', 'IN'));
                 }, 
                 child: Text('Hindi'),
-                ) 
+                ),
               ],
             )
           ],
