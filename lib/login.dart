@@ -47,7 +47,7 @@ class _login_screenState extends State<login_screen> {
             return InkWell(
               onTap: () {
                 controller.loginApi();
-              },
+              }, 
               child: controller.loadind.value ? CircularProgressIndicator() : Container(
                 height: 45,
                 color: Colors.blue,
