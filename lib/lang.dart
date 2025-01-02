@@ -35,7 +35,7 @@ class _LangPageState extends State<LangPage> {
 
                 OutlinedButton(onPressed: (){
                          Get.updateLocale(Locale('hn', 'IN'));
-                }, child: Text('Hindi'))
+                }, child: Text('Hindi')) 
               ],
             )
           ],
