@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
         
       // ),
-      
+       
       home:  login_screen(),
 
       getPages: [
