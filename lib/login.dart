@@ -59,7 +59,7 @@ class _login_screenState extends State<login_screen> {
            }
           )
           ],
-        ),
+        ), 
       ),
     );
   }
