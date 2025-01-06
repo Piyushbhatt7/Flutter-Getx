@@ -4,6 +4,7 @@ import 'package:flutter_getx/getx_navigator.dart';
 import 'package:flutter_getx/home_screen.dart';
 import 'package:flutter_getx/languagechange.dart';
 import 'package:flutter_getx/login.dart';
+import 'package:flutter_getx/splash_scren.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         
       // ),
        
-      home:  login_screen(),
+      home:  SplashScren(),
 
     
       getPages: [
