@@ -6,5 +6,12 @@ class ApiResponse <T> {
    T? data;
    String? msg;
 
-   ApiResponse(this.status, this.dat)
+   ApiResponse(this.status, this.data, this.msg);
+
+   ApiResponse.loading() : status : Status.LODAING ;
+   @override
+
+   String toString(){
+    return 'Status'
+   }
 }
