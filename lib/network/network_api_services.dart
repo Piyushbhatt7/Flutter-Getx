@@ -9,7 +9,10 @@ class NetworkApiServices extends BaseApiServices {
     @override
     Future<dynamic> getApi(String url) async{
 
+    
+    dynamic responseJson;
       try {
+            
             final response = await http.get(Uri.parse(url)).timeout(Duration(seconds: 10));
       }
       on SocketException {
@@ -18,7 +21,13 @@ class NetworkApiServices extends BaseApiServices {
       on RequestTimeOut {
          throw RequestTimeOut();
       }
+
+      return responseJson;
         
+    }
+
+    dynamic returnResponse(http.Response response) {
+      
     }
 
 }
