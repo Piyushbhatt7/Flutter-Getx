@@ -10,12 +10,15 @@ class NetworkApiServices extends BaseApiServices {
     Future<dynamic> getApi(String url) async{
 
       try {
-
+            final response = await http.get(Uri.parse(url)).timeout(Duration(seconds: 10));
       }
       on SocketException {
          throw InternetException();
       }
-        final response = await http.get(Uri.parse(url)).timeout(Duration(seconds: 10));
+      on RequestTimeOut {
+         throw RequestTimeOut();
+      }
+        
     }
 
 }
