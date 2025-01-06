@@ -1,1 +1,1 @@
-stat
+enum Status {LODAING, }
