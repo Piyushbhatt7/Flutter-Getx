@@ -12,9 +12,7 @@ class _SplashScrenState extends State<SplashScren> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-      ),
+        
     );
   }
 }
