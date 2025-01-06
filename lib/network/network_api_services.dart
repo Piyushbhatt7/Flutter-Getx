@@ -17,7 +17,7 @@ class NetworkApiServices extends BaseApiServices {
       }
       on SocketException {
          throw InternetException();
-      }
+      } 
       on RequestTimeOut {
          throw RequestTimeOut();
       }
@@ -27,7 +27,7 @@ class NetworkApiServices extends BaseApiServices {
     }
 
     dynamic returnResponse(http.Response response) {
-      
+
     }
 
 }
