@@ -5,4 +5,6 @@ class ApiResponse <T> {
    Status? status;
    T? data;
    String? msg;
+
+   ApiResponse(this.status, this.dat)
 }
