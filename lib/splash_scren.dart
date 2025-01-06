@@ -15,7 +15,7 @@ class _SplashScrenState extends State<SplashScren> {
         
         floatingActionButton: FloatingActionButton(onPressed: (){
             
-            InternetException();
+          throw  InternetException();
         }),
         
     );
