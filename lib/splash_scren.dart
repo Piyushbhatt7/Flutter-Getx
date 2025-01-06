@@ -13,7 +13,7 @@ class _SplashScrenState extends State<SplashScren> {
     return Scaffold(
 
       appBar: AppBar(
-        
+        backgroundColor: Colors.blue,
       ),
     );
   }
