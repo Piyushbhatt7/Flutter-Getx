@@ -12,7 +12,9 @@ class _SplashScrenState extends State<SplashScren> {
   Widget build(BuildContext context) {
     return Scaffold(
         
-        
+        floatingActionButton: FloatingActionButton(onPressed: (){
+          
+        }),
         
     );
   }
