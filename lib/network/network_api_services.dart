@@ -14,7 +14,7 @@ class NetworkApiServices extends BaseApiServices {
       try {
             
             final response = await http.get(Uri.parse(url)).timeout(Duration(seconds: 10));
-            responseJson = returnResponse(response)
+            responseJson = returnResponse(response);
       }
       on SocketException {
          throw InternetException();
