@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/app_exeptions.dart';
 
 class SplashScren extends StatefulWidget {
   const SplashScren({super.key});
@@ -13,7 +14,8 @@ class _SplashScrenState extends State<SplashScren> {
     return Scaffold(
         
         floatingActionButton: FloatingActionButton(onPressed: (){
-          
+            
+            InternetException();
         }),
         
     );
