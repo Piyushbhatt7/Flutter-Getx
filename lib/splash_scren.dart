@@ -11,7 +11,10 @@ class _SplashScrenState extends State<SplashScren> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
+      appBar: AppBar(
+        
+      ),
     );
   }
 }
