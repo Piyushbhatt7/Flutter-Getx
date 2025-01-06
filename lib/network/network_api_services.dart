@@ -5,7 +5,7 @@ class NetworkApiServices extends BaseApiServices {
     
     @override
     Future<dynamic> getApi(String url) async{
-        final response = await http.get(Uri.parse(url))
+        final response = await http.get(Uri.parse(url)).timeout(Duration(seconds: 10));
     }
 
 }
