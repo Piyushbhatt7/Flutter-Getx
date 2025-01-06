@@ -13,5 +13,5 @@ class AppExeptions implements Exception{
 
 class InternetException extends AppExeptions {
    
-   InternetException([String? msg]) : super(msg, 'No internet')
+   InternetException([String? msg]) : super(msg, 'No internet');
 }
