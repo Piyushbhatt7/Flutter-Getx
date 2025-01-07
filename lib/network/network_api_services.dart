@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_getx/app_exeptions.dart';
@@ -28,6 +29,11 @@ class NetworkApiServices extends BaseApiServices {
     }
 
     dynamic returnResponse(http.Response response) {
+      switch(response.statusCode) {
+         case 200:
+            dynamic responseJson = jsonDecode(response.body);
+            return responseJson;
+      }
 
     }
 
