@@ -13,6 +13,7 @@ class NetworkApiServices extends BaseApiServices {
 
     if (kDebugMode) {
       print(url);
+      //print(data);
     }
     dynamic responseJson;
       try {
@@ -41,7 +42,8 @@ class NetworkApiServices extends BaseApiServices {
     dynamic responseJson;
       try {
             
-            final response = await http.get(Uri.parse(url)).timeout(Duration(seconds: 10));
+            final response = await http.post(Uri.parse(url));
+            body : data;
             responseJson = returnResponse(response);
       }
       on SocketException {
