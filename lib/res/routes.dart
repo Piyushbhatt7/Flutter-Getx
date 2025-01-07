@@ -4,9 +4,11 @@ import 'package:flutter_getx/view/splash.dart';
 import 'package:get/get.dart';
 
 class AppRoutes {
-
-  static appRoutes () => [
-
-    GetPage(name : RoutesNamne.Splash, page: () =>  Splash(),)
-  ];
+  static appRoutes() => [
+        GetPage(
+            name: RoutesNamne.Splash,
+            page: () => Splash(),
+            transitionDuration: Duration(milliseconds: 250),
+            transition: Transition.leftToRight)
+      ];
 }
