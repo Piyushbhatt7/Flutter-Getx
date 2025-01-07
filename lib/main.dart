@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         
       // ),
        
-      home:  Splash(),
+      home:  Dialog_alert(),
 
     
       // getPages: [

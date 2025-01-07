@@ -39,7 +39,7 @@ class _Dialog_alertState extends State<Dialog_alert> {
           //             // ),
 
           //             confirm: TextButton(onPressed: (){
-          //                 Get.back();
+          //                 Get.back();                             // without getx method
           //             }, child: Text("Indian")),
 
           //             cancel: TextButton(onPressed: (){
