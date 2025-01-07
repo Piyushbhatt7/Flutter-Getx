@@ -31,3 +31,10 @@ class ServerException extends AppExeptions {
 
    
 }
+
+class FetchDataException extends AppExeptions {
+   
+   FetchDataException([String? msg]) : super(msg, 'Server time out');
+
+   
+}

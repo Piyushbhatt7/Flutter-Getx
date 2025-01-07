@@ -33,6 +33,12 @@ class NetworkApiServices extends BaseApiServices {
          case 200:
             dynamic responseJson = jsonDecode(response.body);
             return responseJson;
+
+         case 400:
+            throw ServerException;
+            
+         default :
+               throw 
       }
 
     }
