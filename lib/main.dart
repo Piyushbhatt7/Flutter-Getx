@@ -46,9 +46,11 @@ class MyApp extends StatelessWidget {
       //     GetPage(name: '/Dialog_alert', page: () => Dialog_alert()),
       // ],
 
-      getPages: [
-        GetPage(name: '/AppRoutes', page: () => HomeScreen())
-      ],
+      // getPages: [
+      //   GetPage(name: '/AppRoutes', page: () => HomeScreen())
+      // ],
+
+      getPages : AppRoutes.appRoutes(),
     );
   }
 }
