@@ -11,7 +11,9 @@ class NetworkApiServices extends BaseApiServices {
     @override
     Future<dynamic> getApi(String url) async{
 
-    
+    if (kDebugMode) {
+      print(url);
+    }
     dynamic responseJson;
       try {
             
@@ -68,10 +70,6 @@ class NetworkApiServices extends BaseApiServices {
 
     }
     
-      @override
-      Future postApi(data, String url) {
-    // TODO: implement postApi
-    throw UnimplementedError();
-      }
+     
 
 }
