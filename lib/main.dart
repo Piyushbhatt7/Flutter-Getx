@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
       // ],
 
       getPages: [
-        AppRoutes.appRoutes(),
+        GetPage(name: '/AppRoutes', page: () => HomeScreen())
       ],
     );
   }
