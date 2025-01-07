@@ -38,7 +38,7 @@ class NetworkApiServices extends BaseApiServices {
             throw ServerException;
             
          default :
-               throw 
+               throw FetchDataException;
       }
 
     }

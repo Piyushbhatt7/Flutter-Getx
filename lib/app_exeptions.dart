@@ -34,7 +34,7 @@ class ServerException extends AppExeptions {
 
 class FetchDataException extends AppExeptions {
    
-   FetchDataException([String? msg]) : super(msg, 'Server time out');
+   FetchDataException([String? msg]) : super(msg, 'Unable to fetch the Data');
 
    
 }
