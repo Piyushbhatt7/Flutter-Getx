@@ -9,6 +9,8 @@ class AppRoutes {
             name: RoutesNamne.Splash,
             page: () => Splash(),
             transitionDuration: Duration(milliseconds: 250),
-            transition: Transition.leftToRight)
+            transition: Transition.leftToRightWithFade
+            ),
+            
       ];
 }

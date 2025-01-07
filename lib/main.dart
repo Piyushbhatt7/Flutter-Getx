@@ -4,6 +4,7 @@ import 'package:flutter_getx/getx_navigator.dart';
 import 'package:flutter_getx/home_screen.dart';
 import 'package:flutter_getx/languagechange.dart';
 import 'package:flutter_getx/login.dart';
+import 'package:flutter_getx/res/routes.dart';
 import 'package:flutter_getx/splash_scren.dart';
 import 'package:flutter_getx/view/splash.dart';
 import 'package:get/get.dart';
@@ -38,11 +39,15 @@ class MyApp extends StatelessWidget {
       home:  Splash(),
 
     
-      getPages: [
+      // getPages: [
       
-        GetPage(name: '/', page: () => HomeScreen()),
-         GetPage(name: '/Getx_Navigator', page: () => Getx_Navigator()),     // Get.toNamed('/screenone', arguments: [ 'name' : 'Piyush' ])
-          GetPage(name: '/Dialog_alert', page: () => Dialog_alert()),
+      //   GetPage(name: '/', page: () => HomeScreen()),
+      //    GetPage(name: '/Getx_Navigator', page: () => Getx_Navigator()),     // Get.toNamed('/screenone', arguments: [ 'name' : 'Piyush' ])
+      //     GetPage(name: '/Dialog_alert', page: () => Dialog_alert()),
+      // ],
+
+      getPages: [
+        AppRoutes.appRoutes(),
       ],
     );
   }
