@@ -15,11 +15,9 @@ class _SplashState extends State<Splash> {
 
       floatingActionButton: FloatingActionButton(onPressed: (){
          Utils.toastMessage('Piyush');
-         Utils.toastMessage('I dont like');
+         Utils.toastMessageCenter('I dont like');
       }),
-      appBar: AppBar(
-        backgroundColor: Colors.amberAccent,
-      ),
+      
     );
   }
 }

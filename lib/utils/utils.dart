@@ -18,7 +18,18 @@ class Utils {
     Fluttertoast.showToast(
       msg: message,
       backgroundColor: AppColor.black,
+      gravity: ToastGravity.BOTTOM
       
+      );
+  }
+
+
+  static toastMessageCenter(String message){
+    Fluttertoast.showToast(
+      msg: message,
+      backgroundColor: AppColor.black,
+      gravity: ToastGravity.CENTER,
+      toastLength: Toast.LENGTH_LONG
       
       );
   }
