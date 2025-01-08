@@ -38,6 +38,7 @@ dependencies:
   get:
   image_picker:
   http:
+  fluttertoast: 
 
 dev_dependencies:
   flutter_test:
