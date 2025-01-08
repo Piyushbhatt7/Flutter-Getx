@@ -7,5 +7,10 @@ class Utils {
     current.unfocus();
     FocusScope.of(context).requestFocus(nextFocus);
 
+
+  }
+
+  static toastMessage(String message){
+
   }
 }
